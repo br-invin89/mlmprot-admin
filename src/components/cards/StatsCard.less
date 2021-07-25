@@ -1,0 +1,50 @@
+@import '~antd/es/style/themes/default.less';
+
+.card {
+  border-radius: @border-radius-base !important;
+}
+.card > div {
+  padding: 11px 19px;
+}
+
+.title {
+  margin-bottom: 0;
+  color: @text-color-secondary;
+  font-weight: 500;
+}
+
+.horizontalRow {
+  height: 2px;
+  margin: 10px 0;
+  background: @card-border-color;
+}
+
+.priceText {
+  margin: 17px 0 0 0;
+  font-weight: 500;
+  font-size: @font-size-h4;
+}
+
+.percentStats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+:global {
+  .positive-percent {
+    margin-bottom: 0px;
+    color: @custom-color-5;
+    font-weight: bold;
+    text-align: end;
+  }
+  .negative-percent {
+    margin-bottom: 0px;
+    color: @custom-color-6;
+    font-weight: bold;
+    text-align: end;
+  }
+  .ant-pro-card-border {
+    border-radius: 5px;
+  }
+}

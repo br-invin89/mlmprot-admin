@@ -1,0 +1,41 @@
+@import '~antd/es/style/themes/default.less';
+
+.label {
+  margin-bottom: 3px;
+  color: @custom-color-2;
+
+  font-size: 14px;
+}
+
+.inputBottomMargin {
+  margin-bottom: 12px;
+}
+
+.selectContainer {
+  width: 100% !important;
+  min-height: 34px;
+  .ant-select-selector {
+    min-height: 34px !important;
+  }
+}
+
+.input {
+  min-height: 34px;
+}
+
+:global {
+  .ant-input {
+    &.has-error {
+      border-color: @error-color;
+      box-shadow: none;
+    }
+  }
+  span {
+    &.error {
+      color: @error-color;
+    }
+  }
+  .ant-select-selector{
+    overflow: auto;
+  }
+}

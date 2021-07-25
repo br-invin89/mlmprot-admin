@@ -1,0 +1,41 @@
+@import '~antd/es/style/themes/default.less';
+
+.roundContainer{
+  display: flex;
+  align-items: center;
+}
+.roundCircle{
+  margin-right: 10px;
+  height: 10px;
+  width: 10px;
+  margin-bottom: 7px;
+  background: @menu-active-color;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+.roundText{
+  margin: 0;
+}
+
+:global {
+  .country-report {
+    @media (max-width: 960px) and (min-width: 576px) {
+      .ant-pro-card-body>div:first-child {
+        display: flex;
+        flex-direction: row !important;
+        align-items: center;
+        .tool-bar{
+          display: flex;
+          width: auto;
+          .table-panel-search-btn {
+            margin-left: 15px !important;
+          }
+        }
+      }
+    }
+    .ant-picker-active-bar {
+      display: none !important;
+    }
+  }
+}

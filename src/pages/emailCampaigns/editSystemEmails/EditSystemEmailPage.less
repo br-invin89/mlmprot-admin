@@ -1,0 +1,61 @@
+@import '~antd/lib/style/themes/default.less';
+
+.content-error {
+  border-color: @error-color;
+}
+:global {
+  .system-email-detail-container {
+    .subject {
+        text-align: center;
+        color: #556EE6;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: underline;
+        margin-top: 20px;
+    }
+    .center {
+        justify-content: center;
+    }
+    .ant-btn-danger {
+      &:hover {
+        color: white;
+        background-color: #ef686e !important;
+      }
+    }
+    .btn-group {
+        margin-top: 17px;
+        text-align: right;
+    }
+    button {
+        width: 150px;
+        margin-left: 10px;
+    }
+    .logo-image {
+      width: 200px;
+      height: auto;
+    }
+    .footer-text {
+      text-align: center;
+    }
+    .rdw-editor-main {
+      border: 1px solid #efefef;
+      padding: 5px;
+    }
+    .rich-editor {
+      width: 100%;
+    }
+  }
+  .system-email-tag-names-container {
+    .title {
+      color: @text-color;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .label {
+      color: @text-color;
+      font-size: 16px;
+      margin-left: 22px;
+      font-weight: 400;
+    }
+  }
+}

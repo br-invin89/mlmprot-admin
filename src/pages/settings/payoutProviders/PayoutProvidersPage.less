@@ -1,0 +1,43 @@
+@import '~antd/lib/style/themes/default.less';
+
+.actionBtn {
+  min-width: 90px !important;
+}
+
+.inputBtn {
+  display: flex;
+  justify-content: center;
+}
+.inputContainer {
+  margin-bottom: 12px;
+}
+
+.inputLabel {
+  margin-bottom: 3px;
+  color: @custom-color-2;
+  font-size: 14px;
+}
+
+:global {
+  @media (max-width: 800px) {
+    .settings-table-container {
+      .ant-table {
+        width: 900px;
+      }
+    }
+  }
+  .rdw-editor-toolbar {
+    border: 1px solid @custom-color-14;
+  }
+  .editorClassName {
+    padding: 10px;
+    border: 1px solid @custom-color-14;
+  }
+  .permissions-wrapper {
+    .permission-text {
+      color: @custom-color-2;
+      font-weight: normal;
+      font-size: 12px;
+    }
+  }
+}

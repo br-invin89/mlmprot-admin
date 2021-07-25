@@ -1,0 +1,21 @@
+@import '~antd/es/style/themes/default.less';
+
+.spacingCard {
+  margin-bottom: @spacing-base;
+}
+
+@media (max-width: 1400px) {
+  .orderSourceTable {
+    table {
+      width: 1200px;
+    }
+  }
+}
+
+:global {
+  .order-source {
+    .ant-table-tbody > tr > td:last-child {
+      padding-right: 24px !important;
+    }
+  }
+}

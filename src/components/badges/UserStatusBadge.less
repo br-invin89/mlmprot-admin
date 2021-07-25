@@ -1,0 +1,106 @@
+@import '~antd/es/style/themes/default.less';
+
+.statusTag {
+  display: inline-block;
+  width: auto;
+  min-width: 100px !important;
+  padding: 5px 10px 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: lightgrey;
+  border-radius: 3px;
+}
+.active {
+  background: @status-active-color;
+}
+.resolved {
+  background: @status-active-color;
+}
+.sent {
+  background: @status-sent-color;
+}
+.inactive {
+  background: @status-inactive-color;
+}
+.ended {
+  background: @status-ended-color;
+}
+.failed {
+  background: @status-failed-color;
+}
+.pending {
+  background: @status-pending-color;
+}
+.saved {
+  background: @status-saved-color;
+}
+.hidden {
+  background: @status-hidden-color;
+}
+.open {
+  background: @status-hidden-color;
+}
+.success {
+  background: @status-success-color;
+}
+.confirmed {
+  background: @status-confirmed-color;
+}
+.shipped {
+  background: @status-shipped-color;
+}
+.refunded {
+  background: @status-refunded-color;
+}
+.partial_refunded {
+  background: @status-refunded-color;
+}
+.cancelled {
+  background: @status-cancelled-color;
+}
+.completed {
+  background: @status-completed-color;
+}
+
+.deleted {
+  background: @status-inactive-color;
+}
+.requested {
+  background: @status-pending-color;
+}
+.accepted {
+  background: @status-completed-color;
+}
+.rejected {
+  background: @status-inactive-color;
+}
+.draft {
+  background: @status-failed-color;
+}
+.in_progress {
+  background: @status-active-color;
+}
+.verified {
+  background: @status-success-color;
+}
+.none {
+  background: @disabled-color;
+}
+.uploaded {
+  background: @status-active-color;
+}
+.processed {
+  background: @status-active-color;
+}
+.unprocessed {
+  background: @status-refunded-color;
+}
+.yes {
+  background: @error-color;
+}
+.paid {
+  background: @status-completed-color;
+}

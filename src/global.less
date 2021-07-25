@@ -1,0 +1,449 @@
+@import '~antd/es/style/themes/default.less';
+
+@font-face {
+  font-family: 'Proxima';
+  src: local('Proxima'), url(./assets/fonts/proxima-nova-regular.ttf) format('truetype');
+}
+
+* {
+  font-family: 'Proxima';
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  color: @text-color;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.ant-menu {
+  padding-top: 10px;
+  font-size: 16px !important;
+}
+
+.ant-btn {
+  border-color: unset !important;
+  box-shadow: unset !important;
+}
+
+// these are the device-agnostic resets and centering
+.mc {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// init functions
+@values-array: 0, 5, 7, 10, 12, 15, 20, 24, 25, 30, 40, 50;
+
+//====================================
+//              FOR LOOP             =
+//====================================
+.for(@i, @n) {
+  .-each(@i);
+}
+
+.for(@n) when (isnumber(@n)) {
+  .for(1, @n);
+}
+
+.for(@i, @n) when not (@i =@n) {
+  .for((@i + (@n - @i) / abs(@n - @i)), @n);
+}
+//--------  End of for loop  ---------//
+
+//=========================================
+//              FOR EACH LOOP             =
+//=========================================
+.for(@array) when (default()) {
+  .for-impl_(length(@array));
+}
+
+.for-impl_(@i) when (@i > 1) {
+  .for-impl_((@i - 1));
+}
+
+.for-impl_(@i) when (@i > 0) {
+  .-each(extract(@array, @i));
+}
+//--------  End of for each loop  ---------//
+
+.make-space() {
+  .for(@values-array);
+  .-each(@value) {
+    .p-@{value} {
+      padding: ~'@{value}px !important';
+    }
+    .pt-@{value} {
+      padding-top: ~'@{value}px !important';
+    }
+    .pl-@{value} {
+      padding-left: ~'@{value}px !important';
+    }
+    .pr-@{value} {
+      padding-right: ~'@{value}px !important';
+    }
+    .pb-@{value} {
+      padding-bottom: ~'@{value}px !important';
+    }
+    .m-@{value} {
+      margin: ~'@{value}px !important';
+    }
+    .mt-@{value} {
+      margin-top: ~'@{value}px !important';
+    }
+    .ml-@{value} {
+      margin-left: ~'@{value}px !important';
+    }
+    .mr-@{value} {
+      margin-right: ~'@{value}px !important';
+    }
+    .mb-@{value} {
+      margin-bottom: ~'@{value}px !important';
+    }
+  }
+}
+.make-space();
+
+.text-secondary {
+  color: @text-color-secondary;
+}
+
+.ant-pro-card-body {
+  padding: 18px !important;
+}
+.ant-pro-card-ghost {
+  > .ant-pro-card-body {
+    padding: 0 !important;
+  }
+}
+
+.ant-table-row {
+  height: 52px;
+  .ant-table-cell {
+    .ant-btn {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.ant-layout-content {
+  .ant-pro-page-container-ghost {
+    .ant-pro-page-container-children-content {
+      margin-top: 24px;
+    }
+  }
+}
+
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  min-height: 34px !important;
+  .ant-select-selection-search-input {
+    min-height: 32px !important;
+  }
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-items-center {
+  align-items: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.page-sub-menu {
+  .ant-tabs-tab {
+    &.ant-tabs-tab-active {
+      .ant-tabs-tab-btn {
+        font-weight: bold;
+      }
+    }
+  }
+}
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    // overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: nowrap;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.ant-table-content {
+  .ant-table {
+    &-thead > tr > th,
+    &-tbody > tr > td,
+    tfoot > tr > th {
+      padding: 8px;
+      white-space: nowrap;
+    }
+  }
+}
+
+.upload-container-product {
+  .dropzone {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 100% !important;
+    background: @white-color;
+    border: 1px dashed @custom-color-12;
+    h4 {
+      font-size: 14px;
+      span {
+        color: @custom-color-13;
+      }
+    }
+    .dz-message {
+      outline: none;
+    }
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+
+  .show-image-container {
+    display: flex;
+    width: 150px;
+    // align-items: center;
+    height: 150px;
+    padding: 15px;
+    border: 1px dashed @custom-color-12;
+    .product-image {
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+      margin: auto;
+    }
+  }
+  // @media screen and (min-width: 1200px) and (max-width: 1400px) {
+  //   .show-image-container {
+  //     height: 100px;
+  //   }
+  // }
+  .cancelIcon {
+    width: 20px;
+    height: 20px;
+    margin: -25px -25px 0px 6px;
+    padding: 0px;
+    border: 1px solid darkgray;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: @white-color;
+    cursor: pointer;
+  }
+  .label-container {
+    color: @custom-color-2;
+    font-size: 14px;
+  }
+
+  .image-file {
+    display: flex;
+    align-items: flex-start;
+    i {
+      margin-right: 10px;
+      font-size: 50px;
+    }
+    .mediaName {
+      margin-top: 11px;
+    }
+  }
+  .thumbnail-file {
+    height: 100%;
+    margin: 8px 0 25px 0;
+    img {
+      width: 100%;
+      height: 85%;
+    }
+  }
+}
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.d-index-block {
+  display: inline-block;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+.width-100p {
+  width: 100% !important;
+}
+.user-upload-list-container {
+  .ant-upload-list-item {
+    .ant-upload-list-item-info {
+      .ant-upload-span {
+        display: flex;
+        margin-top: 15px;
+        > * {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.ant-picker-body {
+  th:first-child {
+    padding-left: 0px !important;
+  }
+  td:first-child {
+    padding-left: 0px !important;
+  }
+}
+
+.btn-danger {
+  padding: 0 20px 0 0;
+  color: @error-color;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  &:hover {
+    color: @error-color;
+    background: transparent;
+  }
+}
+
+.btn-success {
+  padding: 0 20px 0 0;
+  color: @success-color;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  &:hover {
+    color: @success-color;
+    background: transparent;
+  }
+}
+
+@media (max-width: 600px) {
+  .ant-picker-panel-container .ant-picker-panels {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .ant-picker-panel-container .ant-picker-panels .ant-picker-panel {
+    display: flex !important;
+  }
+}
+
+.ant-collapse-content-hidden {
+  display: none;
+}
+
+.btn-34 {
+  min-height: 34px;
+}
+
+.ant-form-vertical .ant-form-item-label,
+.ant-col-24.ant-form-item-label,
+.ant-col-xl-24.ant-form-item-label {
+  padding: 0 0 3px !important;
+}
+
+.awssld {
+  height: 100px;
+}
+
+.awssld__content {
+  background: white !important;
+}
+
+.ant-picker-range {
+  padding: 4px 6px !important;
+}
+.ant-picker-range-separator {
+  padding: 0 3px !important;
+}
+.ant-picker-active-bar {
+  background: none !important;
+}
+.ant-form-item-control {
+  width: 100% !important;
+}
+
+.ant-form-item-explain-error {
+  color: @error-color !important;
+}
+
+.has-error {
+  border-color: #F56B6E !important;
+}
+
+.has-error .ant-select-selector {
+  border-color: #F56B6E !important;
+}
+
+.ant-form-item-has-error {
+  border-color: #F56B6E !important;
+}
+
+.ant-form-item-has-error .ant-input:focus {
+  border-color: #F56B6E !important;
+  border-right-width: 1px !important;
+  outline: 0 !important;
+}
+.ant-form-item-has-error .ant-input {
+  border-color: #F56B6E !important;
+  border-right-width: 1px !important;
+  outline: 0 !important;
+}
+.ant-form-item-has-error .ant-select:focus {
+  border-color: #F56B6E !important;
+  border-right-width: 1px !important;
+  outline: 0 !important;
+}
+
+.ant-form-item-has-error .ant-select {
+  border-color: #F56B6E !important;
+  border-right-width: 1px !important;
+  outline: 0 !important;
+}

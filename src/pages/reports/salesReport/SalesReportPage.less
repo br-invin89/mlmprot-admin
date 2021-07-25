@@ -1,0 +1,268 @@
+@import '~antd/es/style/themes/default.less';
+
+@media (max-width: 1600px) and (min-width: 1100px) {
+  .affiliateToCustomerCardView {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-right: 7.5px;
+  }
+
+  .todaysSalesCardView {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-left: 7.5px;
+  }
+
+  .salesCard {
+    margin-top: 0px !important;
+  }
+
+  .affiliateTextContainer {
+    padding-top: 30px !important;
+  }
+
+  .salesCardMaginRight {
+    height: 100%;
+    background-color: white;
+  }
+}
+
+.selectBox {
+  width: 162px !important;
+}
+
+.chartLables {
+  display: flex;
+  justify-content: center;
+}
+
+.affiliateCard {
+  padding: 20px 24px;
+  background: @white-color;
+}
+.affiliateCard h5 {
+  margin-bottom: 0px;
+  color: @custom-color-2;
+  font-size: @font-size-h5;
+}
+
+.affiliateCardContent {
+  height: 180px;
+  background: @white-color;
+}
+.affiliateCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+}
+.affiliateCol h5 {
+  margin: 20px 0;
+  color: @custom-color-2;
+  font-size: @font-size-h6;
+  text-align: center;
+}
+
+.affiliateTextContainer {
+  width: 100%;
+  min-height: 45px;
+  padding: 0px 14px 2px !important;
+  background: @white-color;
+  border-top: 1px solid @border-color-1;
+}
+
+.affiliateNumberTextContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.affiliateText {
+  display: flex;
+  align-items: center;
+}
+
+.affiliateRoundContainer {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background: @menu-active-color;
+  border-radius: 10px;
+}
+
+.affiliateRoundTextDesc {
+  color: @custom-color-1;
+  font-weight: normal;
+  font-size: @font-size-h5;
+  font-style: normal;
+}
+.affiliateRoundTextVal {
+  color: @custom-color-2;
+  font-size: @font-size-h5;
+}
+
+.salesCard {
+  width: 100%;
+  height: 480px;
+  margin-top: 15px;
+  padding: 18px 22px;
+  background: @white-color;
+}
+
+.salesRowText h5 {
+  margin-bottom: 0px;
+  color: @custom-color-2;
+  font-size: @font-size-h5;
+}
+.salesRowText h4 {
+  font-size: @font-size-h1;
+}
+
+.salesPositivePercentText h4 {
+  color: @custom-color-5;
+  font-weight: 550;
+}
+
+.salesNegativePercentText h4 {
+  color: @custom-color-6;
+  font-weight: 550;
+}
+
+.salesChart {
+  width: 100%;
+  height: 200px;
+  background: @white-color;
+}
+.salesProgressContainer {
+  align-items: center;
+  margin: 10px 0 15px;
+}
+.salesProgressP {
+  margin: 0;
+  color: @custom-color-1;
+}
+.salesProgressSpan {
+  margin: 0;
+  color: @custom-color-2;
+  font-weight: bold;
+}
+
+.progressContainer {
+  margin: 10px -20px 0px -20px;
+  padding: 16px 24px 0px;
+  border-top: 1px solid @border-color-1;
+}
+.progressSubContainer {
+  width: 100%;
+}
+.progressSubTextContainer {
+  margin: 0;
+  color: @custom-color-1;
+  font-size: @font-size-h5;
+}
+.progressSubTextRow {
+  width: 100%;
+  background: @white-color;
+}
+.progressSubTextCol1 {
+  margin-top: 4px;
+  background: @white-color;
+}
+.progressSubTextCol2 {
+  background: @white-color;
+}
+.progressSubTextCol2Number {
+  font-size: @font-size-h3;
+  text-align: end;
+}
+
+:global {
+  .sales-report {
+    .ant-picker-active-bar {
+      display: none;
+    }
+    .right-panel {
+      display: flex;
+    }
+
+    @media (max-width: 960px) and (min-width: 710px) {
+      .ant-pro-card-body > div:first-child {
+        display: flex;
+        flex-direction: row !important;
+        align-items: center;
+        .tool-bar {
+          display: flex;
+          width: auto;
+          .toolbar-container {
+            flex-direction: row;
+            width: auto !important;
+            .toolbar-sub-container {
+              width: auto !important;
+              margin-left: 10px !important;
+              .ant-picker-range {
+                width: auto !important;
+                div {
+                  width: auto !important;
+                }
+              }
+            }
+            .right-panel {
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+    .toolbar-container .toolbar-sub-container:last-child {
+      max-width: 80px;
+      div {
+        margin-right: 0px !important;
+      }
+    }
+  }
+  @media (min-width: 600px) {
+    .large-width {
+      display: block;
+    }
+    .small-width {
+      display: none;
+    }
+  }
+  @media (max-width: 600px) {
+    .large-width {
+      display: none;
+    }
+    .small-width {
+      display: block;
+    }
+    .affiliate-card-content {
+      height: 340px;
+      background: @white-color;
+    }
+  }
+  @media (max-width: 700px) and (min-width: 400px) {
+    .toolbar-container .toolbar-sub-container:last-child > div {
+      padding-left: 8px;
+    }
+  }
+  @media (max-width: 400px) {
+    .right-panel {
+      flex-direction: column;
+    }
+    .right-panel > .toolbar-sub-container:last-child {
+      width: 100% !important;
+    }
+    .toolbar-container .toolbar-sub-container:last-child {
+      max-width: 100% !important;
+    }
+    .ant-btn-primary {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-left: 0px !important;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import '~antd/es/style/themes/default.less';
+
+:global {
+  .empty-component-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: calc(100vh - 125px) !important;
+    padding: 20px 24px;
+    background-color: white;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 500px;
+      .coming-soon-text {
+        margin: 10px 0px 30px;
+        font-weight: 800;
+        font-size: 35px;
+        font-family: sans-serif;
+        letter-spacing: 14px;
+      }
+      .ready-text {
+        color: gray;
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import '~antd/lib/style/themes/default.less';
+
+.inputBtn {
+  display: flex;
+  justify-content: center;
+}
+.inputContainer {
+  margin-bottom: 12px;
+}
+
+.inputLabel {
+  margin-bottom: 3px;
+  color: @custom-color-2;
+  font-size: 14px;
+}
+
+:global {
+  @media (max-width: 800px) {
+    .settings-table-container {
+      .ant-table {
+        width: 900px;
+      }
+    }
+  }
+}

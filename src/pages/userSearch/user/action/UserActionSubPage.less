@@ -1,0 +1,183 @@
+@import '~antd/lib/style/themes/default.less';
+
+.line {
+  height: 1px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid @border-color-1;
+}
+
+.card {
+  min-height: 400px;
+}
+.card > div {
+  //padding: 15px 24px 0px !important;
+}
+
+.statusBtn {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.statusBtn button {
+  width: 100px;
+  margin-bottom: 12px;
+}
+
+.label {
+  color: @text-color;
+  font-weight: 500;
+  font-size: @font-size-label;
+}
+.lightLabel {
+  color: @custom-color-1;
+  font-weight: 500;
+  font-size: 12px;
+}
+.orLabel {
+  width: auto;
+  padding: 10px;
+}
+
+.changeRankContainer {
+  margin-top: 0px !important;
+}
+
+.payoutContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.changeBtn {
+  width: 100%;
+}
+
+.payoutContainer .label {
+  margin-right: 20px;
+}
+
+@media (max-width: 992px) {
+  .orLabel {
+    width: 100%;
+    padding-top: 0px !important;
+    padding-bottom: 7px;
+    text-align: center;
+  }
+}
+
+.inputContainer {
+  margin-bottom: 12px;
+}
+
+.inputLabel {
+  margin-bottom: 3px;
+  color: @text-color;
+  font-size: @font-size-label;
+}
+.button {
+  height: 34px;
+}
+
+.actionWrapper {
+  position: relative;
+  display: flex;
+  .actionTabs {
+    width: 180px;
+    ul {
+      padding-right: 16px;
+      padding-left: 0;
+      li {
+        margin: 9px 0;
+        color: @text-color;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.activeTab {
+  font-weight: bold;
+}
+.loadingContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.walletContainer {
+  position: relative;
+}
+
+.statusInput {
+  width: 180px !important;
+}
+.walletInputWrapper {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  input {
+    width: 200px;
+    margin-right: 12px;
+  }
+}
+.requestLabel {
+  width: 100px;
+}
+.payoutOptionWrapper {
+  display: flex;
+  button {
+    // border: 0 none;
+  }
+}
+
+.inputField {
+  margin-right: 24px !important;
+}
+
+:global {
+  .alert-container {
+    margin-top: 22px;
+    div {
+      align-items: flex-start !important;
+    }
+    @media (max-width: 1200px) {
+      margin-top: 0px !important;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .alert-container > div {
+      margin-top: 22px !important;
+    }
+  }
+  .success-disabled[disabled] {
+    color: white !important;
+    background: @success-color !important;
+    border: none;
+  }
+  .success-disabled[disabled]:hover {
+    color: white !important;
+    background: @success-color !important;
+    border: none;
+  }
+  .danger-disabled[disabled] {
+    color: white !important;
+    background: @error-color !important;
+    border: none;
+  }
+  .danger-disabled[disabled]:hover {
+    color: white !important;
+    background: @error-color !important;
+    border: none;
+  }
+}

@@ -1,0 +1,209 @@
+@import '~antd/lib/style/themes/default.less';
+
+.inputContainer {
+  margin-bottom: 12px;
+}
+
+.inputLabel {
+  margin-bottom: 3px;
+  color: @custom-color-2;
+
+  font-size: 14px;
+}
+
+.deleteBtn {
+  margin-right: 24px;
+}
+
+:global {
+  .primary {
+    color: @custom-color-9;
+  }
+  .success--dark {
+    color: @custom-color-6;
+  }
+  .success {
+    color: @custom-color-5;
+  }
+  .rdw-editor-toolbar {
+    border: 1px solid @custom-color-14;
+  }
+  .editorClassName {
+    padding: 10px;
+    border: 1px solid @custom-color-14;
+  }
+
+  .text-row {
+    height: 28px;
+  }
+  .permissions-wrapper {
+    .permission-text {
+      color: @custom-color-2;
+      font-weight: normal;
+      font-size: 12px;
+    }
+  }
+  .department-label {
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  .input-label-text {
+    color: @custom-color-2;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .action-icon {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    img {
+      cursor: pointer;
+    }
+  }
+  .administrator-header {
+    .view-icon {
+      cursor: pointer;
+    }
+    .view-card-icon {
+      margin-right: 12px;
+      cursor: pointer;
+    }
+    .view-table-icon {
+      margin-right: 15px;
+      cursor: pointer;
+    }
+    .pagination-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .ant-input-search-button {
+      margin: 0;
+    }
+    .searc-dist {
+      .input-container {
+        width: 200px;
+      }
+    }
+    .list-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+
+      @media (max-width: 1050px) {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        .list-pagination-container {
+          margin-top: 8px;
+          margin-right: 0px;
+        }
+      }
+
+      .list-view-container {
+        display: flex;
+        align-items: center;
+      }
+      .list-pagination-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+        span {
+          color: @custom-color-1;
+          font-size: 14px;
+        }
+        .ant-pagination-item {
+          margin-right: 0px;
+          background-color: transparent;
+          border: none;
+        }
+        .ant-pagination-prev {
+          margin-right: 0px;
+          .ant-pagination-item-link {
+            font-size: 10px;
+            background-color: transparent;
+            border: none;
+          }
+        }
+        .ant-pagination-item-active {
+          color: @custom-color-3;
+        }
+        .ant-pagination-next {
+          .ant-pagination-item-link {
+            font-size: 10px;
+            background-color: transparent;
+            border: none;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .searc-dist {
+        .input-container {
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+    }
+    @media (max-width: 1300px) {
+      .list-container {
+        margin-top: 14px;
+      }
+    }
+  }
+  .general-cards-container {
+    .user-card {
+      padding: 0px;
+    }
+
+    .user-container {
+      padding: 24px;
+      padding-bottom: 0px;
+    }
+    .user-container-foot {
+      padding: 21px 24px;
+    }
+    .user-image-row {
+      .user-image-col {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 88px;
+          height: 88px;
+          border-radius: 50%;
+        }
+      }
+    }
+    .user-name-col {
+      p {
+        margin-bottom: 0px;
+
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+
+    .user-status-col {
+      display: flex;
+      justify-content: center;
+    }
+
+    .divider {
+      height: 1px;
+      background: @border-color-1;
+    }
+    .title {
+      color: @custom-color-2;
+      font-weight: normal;
+    }
+    .text-muted {
+      color: @custom-color-1;
+    }
+    .card-text {
+      text-align: end;
+    }
+  }
+}

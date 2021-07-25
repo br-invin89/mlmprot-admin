@@ -1,0 +1,130 @@
+@import '~antd/lib/style/themes/default.less';
+
+.pre {
+  margin: 12px 0;
+  padding: 12px 20px;
+  background: @input-bg;
+  box-shadow: @card-shadow;
+}
+
+.customerBarCard {
+  height: 100%;
+}
+
+.leaderBoardTable {
+  margin-top: 24px;
+}
+
+@media (max-width: 1370px) {
+  .leaderboardContainer [class='ant-table'] {
+    width: 1200px !important;
+  }
+
+  .topCountriesContainer [class='ant-table'] {
+    width: 900px !important;
+  }
+
+  .bestSellingContainer [class='ant-table'] {
+    width: 900px !important;
+  }
+}
+
+.bestSellingTable {
+  margin-top: 24px;
+}
+
+.topCountriesTable {
+  margin-top: 24px;
+}
+
+.summarycard {
+  margin-bottom: 14px;
+}
+.summarycard > div {
+  border: none;
+}
+
+.title {
+  margin-bottom: 0;
+  font-size: 16px;
+  width: 100%;
+}
+:global {
+  @media (max-width: 1600px) {
+    .dashboard-customers-chart {
+      .ant-picker-range {
+        width: 100%;
+        margin-top: 5px;
+      }
+    }
+  }
+  .leaderboard-panel {
+    .ant-picker-range {
+      min-width: 280px;
+    }
+    .toolbar-sub-container {
+      .ant-picker-range {
+        .ant-picker-range-separator {
+          width: 22px !important;
+        }
+      }
+      .ant-picker-active-bar {
+        display: none !important;
+      }
+    }
+  }
+}
+.payoutContainer {
+  margin-bottom: 20px;
+}
+.customerContainer {
+  margin-bottom: 20px;
+}
+
+.customerContainer:last-child {
+  margin-bottom: 0;
+}
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.progressIconContainer {
+  display: flex;
+  align-items: center;
+}
+.progressIconText {
+  padding-left: 12px;
+  color: @text-color-secondary;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.progressLabel {
+  font-size: 16px;
+}
+
+.salesChartCard {
+  height: calc(100% - 1px);
+}
+.payoutChartCard {
+  height: 100%;
+}
+
+.payoutBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 991px) {
+  .payoutBtnContainer > div {
+    width: 100%;
+  }
+}
+
+.loadLeaderboardBtn {
+  margin-left: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}

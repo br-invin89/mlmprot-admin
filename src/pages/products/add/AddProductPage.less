@@ -1,0 +1,224 @@
+@import '~antd/lib/style/themes/default.less';
+
+.digitalProduct {
+  margin-bottom: 15px;
+}
+
+.isPcCheckbox {
+  margin-bottom: 15px;
+}
+
+.inputContainer {
+  margin-bottom: 12px;
+}
+
+.titleInputError, .pathInputError, .priorityInputError, .fromSiteError,  .retailPriceError, .autoshipRetailPriceError, .pvError, .firstOrderBonusError, .memberPriceError, .autoshipMemberPriceError, .cvError, .fastStartBonusError, .maxOrderQuantityError, .maxAutoshipQuantityError, .maxPersonalSalesQuantityError, .skuError, .costError, .keepActiveMonthsError, .termLengthError, .generalShippingRateError, .productWeightError, .weightUnitError {
+  border: 1px solid @error-color !important;
+}
+
+.inputLabel {
+  margin-bottom: 3px;
+  color: @custom-color-2;
+  font-size: 14px;
+}
+.inputBtn{
+  display: flex;
+  justify-content: center;
+}
+.shippingDeleteText{
+  padding-left: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+  color:  @status-inactive-color;
+}
+.shippingActions{
+  display: flex;
+  align-items: center
+}
+
+.iconCol{
+  display: flex;
+  align-items: center;
+  padding-top: 14px;
+}
+
+.shippingCard > div{
+  padding: 18px 18px 0px !important;
+}
+.card > div{
+  padding: 18px 18px 5px !important;
+}
+
+.cards > div{
+  padding: 18px 18px 18px !important;
+}
+
+
+.productActionBtn {
+  text-align: right;
+  margin-top: 15px;
+  button {
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 0;
+  }
+}
+.productWeight{
+  display: flex;
+  // align-items: flex-end;
+  width: 100%;
+}
+
+.inputContainerWeight {
+  width: 100%;
+  margin-bottom: 12px;
+}
+.rowInput {
+  width: calc(100% - 38px);
+}
+
+.rowBtn {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 320px) {
+  .productActionBtn {
+    text-align: center;
+    button {
+      width: 120px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.collectionCreateBtn {
+  width: 100%;
+}
+
+.visibilityCheckbox{
+  padding: 8px 0;
+}
+
+:global {
+  .alert-container{
+    @media (max-width: 1200px) {
+      div {
+        margin-top: 0px !important;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .product-d{
+      display: block !important;
+    }
+  }
+  .ant-collapse-item{
+    margin-bottom: 7px;
+  }
+  .ant-collapse-item:last-child{
+    margin-bottom: 0px;
+  }
+  .ant-collapse-header{
+    display: flex;
+    align-items: center;
+    border: none!important;
+    outline: none !important;
+  }
+  .ant-collapse-content-box{
+    padding: 10px 0px 0 27px;
+    table{
+      border: 1px solid #E6EAEE;
+    }
+  }
+  .ant-collapse-header:active{
+    border: none !important;
+    outline: none !important
+  }
+  .collapse-container{
+    display: flex;
+    align-items: center;
+  }
+
+  .rdw-editor-toolbar {
+    border: 1px solid @custom-color-14;
+  }
+  .editorClassName {
+    border: 1px solid @custom-color-14;
+    padding: 10px;
+  }
+
+  .product-details-container {
+    input, textarea {
+      border: 1px solid @custom-border-1;
+      // border-radius: 4px;
+    }
+
+    .title {
+      color: @custom-color-2;
+      font-size: 16px;
+    }
+    .alert-container {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .label {
+      color: @custom-color-2;
+      font-size: 14px;
+    }
+    .ship-label {
+
+      font-size: 14px;
+    }
+    .shipping-container {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-left: 15px;
+    }
+    .table-shipping {
+      .table-card {
+        border: 1px solid @border-color-1;
+        box-shadow: none;
+        .card-body {
+          padding: 0px;
+        }
+      }
+    }
+  }
+
+  .add-product-btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    button {
+      width: 150px;
+    }
+  }
+  .product-usertype label {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .product-usertype label:first-child {
+    margin-bottom: 5px;
+  }
+}
+
+.productTypeColumn {
+  @media (min-width: 990px) and (max-width: 1200px) {
+    width: 50%;
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
+
+.hideColumn {
+  display: none;
+}
+
+.showColumn {
+  display: block;
+}

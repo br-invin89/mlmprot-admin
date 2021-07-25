@@ -1,0 +1,92 @@
+@import '~antd/lib/style/themes/default.less';
+
+.detailContainer {
+  min-height: 300px;
+}
+.detailTable {
+  max-width: calc(100% + 48px);
+  margin-right: -24px;
+  margin-left: -24px;
+  overflow: auto;
+}
+.detailHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.detailFooter {
+  margin-top: 12px;
+  p {
+    margin-bottom: 0;
+  }
+}
+.detailStatus {
+  display: flex;
+  justify-content: flex-end;
+}
+.userStatusBadge {
+  div {
+    width: 100%;
+  }
+}
+.toolbarSubContainer {
+  @media (max-width: 768px) {
+    width: 50%;
+  }
+}
+.actionGroup {
+  display: flex;
+  align-items: center;
+}
+.viewDetailBtn {
+  margin-left: 4px;
+}
+.detailModalTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.recordContainer {
+}
+.recordCellContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 28px;
+  label {
+    color: @text-color-secondary;
+  }
+}
+.labelId {
+  width: 60%;
+  text-align: end;
+}
+.refundActionRoot {
+  margin-top: 18px;
+}
+.refundOrderNum {
+  font-weight: 600;
+}
+
+:global {
+  .order-search-table {
+    .ant-pro-card-body div:first-child {
+      flex-direction: row !important;
+      align-items: center !important;
+    }
+    .tool-bar {
+      display: flex;
+      align-items: center;
+      width: auto;
+    }
+    .toolbar-container .toolbar-sub-container,
+    .ant-dropdown-trigger {
+      margin-top: 0px !important;
+    }
+  }
+
+  .action-modal div {
+    display: inline-block;
+  }
+}

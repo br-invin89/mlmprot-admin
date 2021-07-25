@@ -1,0 +1,167 @@
+@import '~antd/lib/style/themes/default.less';
+
+.card > div {
+  padding: 15px 24px !important;
+}
+
+.inputContainer {
+  margin-bottom: 12px;
+}
+
+.inputLabel {
+  margin-bottom: 3px;
+  color: @custom-color-2;
+
+  font-size: 14px;
+}
+
+.formFields{
+  margin-bottom: 0px !important;
+}
+.checkboxes{
+  margin-bottom: 0px !important;
+}
+.logoImg{
+  width: 88px;
+  height: 88px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  font-size: 60px !important;
+  padding: 12px;
+}
+
+
+:global {
+
+  .ant-table-content{
+    overflow: auto !important;
+  }
+  @media (max-width: 1300px) {
+    .search-result-container {
+      .ant-table {
+        width: 1200px;
+      }
+    }
+  }
+  .ant-form-item-has-error {
+    .ant-input {
+      border-color: @error-color !important;
+    }
+  }
+  .uploadImg {
+    display: flex;
+    align-items: flex-start;
+  }
+  .rowsA {
+    display: flex;
+    align-items: flex-start;
+    .inputWrapperA {
+      margin-right: 10px;
+    }
+    img{
+      margin-top: 9px;
+    }
+  }
+  .editIcon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  @media (max-width: 990px) {
+    .check-aling {
+      margin-top: -10px !important;
+      margin-bottom: 15px !important;
+    }
+    .check-aling:first-child {
+      margin-bottom: 10px !important;
+    }
+  }
+  .check-aling {
+    margin-top: 15px;
+    .ant-form-item{
+      position: relative;
+      top: 12px;
+    }
+  }
+  .ant-checkbox-wrapper {
+    span {
+      color: @custom-color-2;
+
+      font-size: 14px;
+    }
+  }
+  .edit-dist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .top-rated-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .text-name {
+        color: @custom-color-2;
+        font-size: 16px;
+        padding-right: 5px;
+      }
+    }
+    .username-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      div {
+        color: @custom-color-1;
+
+        font-size: 14px;
+      }
+      .v-line {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .permissions-wrapper {
+    .permission-text {
+      color: @custom-color-2;
+      font-weight: normal;
+      font-size: 12px;
+    }
+  }
+  .product-details-container {
+    .card-body {
+      padding: 14px 24px;
+    }
+    .title {
+      color: @custom-color-2;
+
+      font-size: 16px;
+    }
+    .alert-container {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .label {
+      color: @custom-color-2;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .ship-label {
+      font-size: 14px;
+    }
+    .shipping-container {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .table-shipping {
+      .table-card {
+        border: 1px solid @border-color-1;
+        box-shadow: none;
+        .card-body {
+          padding: 0px;
+        }
+      }
+    }
+  }
+}

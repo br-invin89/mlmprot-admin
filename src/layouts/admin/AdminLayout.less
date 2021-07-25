@@ -1,0 +1,180 @@
+@import '~antd/es/style/themes/default.less';
+
+.pageTitle {
+  font-size: 20px;
+  line-height: 52px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+:global {
+  .ant-layout-sider {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .ant-pro-global-header {
+    padding: 0 24px !important;
+  }
+
+  .ant-layout-sider-children > div:nth-child(2) > div > div{
+    margin-right: 0px !important;
+    padding-bottom: 24px;
+  }
+
+  .ant-menu-vertical .ant-menu-item:not(:last-child),
+  .ant-menu-vertical-left .ant-menu-item:not(:last-child),
+  .ant-menu-vertical-right .ant-menu-item:not(:last-child),
+  .ant-menu-inline .ant-menu-item:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .ant-menu-vertical > .ant-menu-item,
+  .ant-menu-vertical-left > .ant-menu-item,
+  .ant-menu-vertical-right > .ant-menu-item,
+  .ant-menu-inline > .ant-menu-item,
+  .ant-menu-vertical > .ant-menu-submenu > .ant-menu-submenu-title,
+  .ant-menu-vertical-left > .ant-menu-submenu > .ant-menu-submenu-title,
+  .ant-menu-vertical-right > .ant-menu-submenu > .ant-menu-submenu-title,
+  .ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+    // height: 32px;
+    // line-height: 32px;
+  }
+  .ant-pro-menu-item-icon {
+    margin-right: 12px;
+    margin-left: 8px;
+    svg {
+      width: 16px;
+      height: 16px;
+      color: #5d487a;
+    }
+  }
+  .ant-menu-item a {
+      color: @menu-color !important;
+      &:hover,
+      &:active,
+      &:focus {
+        color: #5d487a !important;
+      }
+  }
+  .ant-menu-item {
+    > span,
+    > a {
+      color: @menu-color !important;
+      &:hover,
+      &:active,
+      &:focus {
+        color: #5d487a !important;
+      }
+    }
+    &.ant-menu-item-selected {
+      > span,
+      > a {
+        color: #5d487a !important;
+      }
+      .ant-pro-menu-item-icon svg {
+        color: @menu-icon-active-color;
+      }
+    }
+    &:hover {
+      .ant-pro-menu-item-icon svg {
+        color: @menu-icon-active-color;
+      }
+    }
+  }
+  .ant-menu-submenu-title i {
+    padding-right: 0px;
+  }
+  .ant-menu-submenu .ant-menu-submenu-title {
+    color: @menu-color !important;
+    &:hover,
+    &:active,
+    &:focus {
+      color: @menu-active-color !important;
+    }
+  }
+  .ant-menu.ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow::after, .ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::after, .ant-menu.ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::after, .ant-menu.ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow::before, .ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::before, .ant-menu.ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow::before { 
+    background: #5d487a !important;
+  }
+  .ant-menu-item.ant-menu-item-selected {
+    background-color: transparent !important;
+  }
+  .ant-menu .ant-menu-inline.ant-menu-sub {
+    background-color: transparent !important;
+  }
+  .sider-logo {
+    display: flex;
+    justify-content: center;
+    width: calc(100% + 32px);
+    margin: -16px;
+    padding: 12px 0;
+  }
+  .ant-pro-sider-logo .sider-logo img {
+    height: 25px;
+    margin-top: 0px;
+  }
+  .ant-layout-header{
+    position: fixed;
+    .ant-pro-global-header{
+      margin-right: 245px;
+      @media (max-width: 992px) {
+       margin-right: 40px;
+      }
+      @media (max-width: 767px) {
+        margin-right: -1px;
+      }
+    }
+  }
+
+  .ant-layout-content{
+    margin-top: 72px;
+  }
+
+  .ant-layout-header .sider-logo {
+    width: inherit;
+    padding: 8px 4px;
+    img {
+      display: none;
+      height: 32px;
+      &.mobile-header {
+        display: block;
+      }
+    }
+  }
+  .ant-pro-sider-logo img.mobile-header {
+    display: none;
+  }
+  .ant-pro-sider-links {
+    display: none;
+  }
+  .ant-menu-submenu-selected .ant-menu-submenu-title .ant-pro-menu-item-title {
+    color: @menu-active-color;
+  }
+  
+  @media only screen and (max-width: 991px) and (min-width: 767px)  { 
+    .ant-pro-menu-item-title {
+      color: white !important
+    }
+     .ant-menu.ant-menu-dark .ant-menu-sub {
+      background: rgba(0,0,0,0.8) !important;
+  }
+//   .ant-menu .ant-menu-sub {
+//     color: white !important
+// }
+  }
+  @media (max-width: 991px) {
+    .ant-pro-sider-logo img.mobile-header {
+      display: inherit;
+      height: 40px;
+      margin-top: 10px;
+    }
+    .ant-pro-sider-logo .desktop-logo-header {
+      display: none;
+    }
+    .ant-pro-menu-item-icon {
+      margin: 0 auto;
+    }
+    .sider-logo {
+      padding-bottom: 0px;
+    }
+  }
+}

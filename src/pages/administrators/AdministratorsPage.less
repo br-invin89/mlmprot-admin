@@ -1,0 +1,272 @@
+@import '~antd/lib/style/themes/default.less';
+
+.ipAddress {
+  width: 90%;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.activateBtn {
+  min-width: 100px;
+}
+
+.inputContainer {
+  margin-bottom: 12px;
+}
+.formitem{
+  margin-bottom: 0 !important;
+}
+.inputBtn {
+  text-align: right;
+}
+
+.checkAllBox {
+  float: right;
+}
+
+.inputLabel {
+  margin-bottom: 3px;
+  color: @custom-color-2;
+  font-size: 14px;
+}
+.createBtn {
+  width: 100%;
+}
+
+.searchBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.createBtn {
+  display: flex;
+  justify-content: center;
+}
+.createBtn button {
+  width: 150px;
+}
+
+.profileContainer {
+  margin-bottom: 20px;
+}
+.administratorHeader {
+  .viewCardIcon {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .viewTableIcon {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .listContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    @media (max-width: 520px) {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      .totalAdministrators {
+        padding-top: 10px;
+        display: inline-block;
+      }
+    }
+
+    .listViewContainer {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.activateBtn {
+  min-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+:global {
+  @media (max-width: 1450px) {
+    .admin-table-container {
+      .ant-table {
+        width: 1300px;
+      }
+    }
+  }
+  .ant-form-item-has-error {
+    .ant-input {
+      border-color: #F56B6E !important;
+    }
+  }
+
+  .ant-row .ant-form-item {
+    margin-bottom: 12px;
+  }
+  .text-row {
+    height: 28px;
+  }
+
+  .permissions-wrapper {
+    .permission-text {
+      color: @custom-color-2;
+      font-weight: normal;
+      font-size: 12px;
+    }
+  }
+
+  .profilePic {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+
+    img {
+      width: 78px;
+      height: 78px;
+      margin-right: 16px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+
+  .input-label-text {
+    color: @custom-color-2;
+    font-size: 14px;
+  }
+
+  .action-icon {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .general-cards-container {
+    .user-card {
+      padding: 0px;
+    }
+
+    .user-container {
+      padding: 24px;
+      padding-bottom: 0px;
+    }
+
+    .user-container-foot {
+      padding: 15px;
+    }
+
+    .user-image-row {
+      .user-image-col {
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 88px;
+          height: 88px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .user-name-col {
+      p {
+        margin-bottom: 0px;
+        word-break: break-all;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+
+    .user-status-col {
+      display: flex;
+      justify-content: center;
+    }
+
+    .divider {
+      height: 1px;
+      background: @border-color-1;
+    }
+
+    .title {
+      color: @custom-color-2;
+      font-weight: normal;
+    }
+
+    .text-muted {
+      color: @custom-color-1;
+    }
+
+    .card-text {
+      text-align: end;
+    }
+
+    .action-btn {
+      .action-btn-col-1 {
+        padding-right: 6px;
+      }
+
+      .action-btn-col-2 {
+        padding-left: 6px;
+      }
+
+      button {
+        width: 100%;
+
+        &:first-child {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .shipstation-container {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 0px;
+    }
+
+    .active-btn {
+      color: @custom-color-11;
+      border: 1px solid @custom-color-11;
+
+      &:hover {
+        color: white;
+        background-color: @custom-color-11;
+      }
+    }
+  }
+
+  .dynamic-delete-button {
+    position: relative;
+    top: -4px;
+    margin: 0 8px;
+    color: @normal-color;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .float-right {
+    float: right;
+  }
+  .select-all-btn {
+    font-size: 14px;
+    cursor: pointer;
+    color: #497de6;
+  }
+  .unselect-all-btn {
+    color: #637baf;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+.rowIpAddress{
+  display: flex !important;
+  align-items: center !important;
+}
+.errorMsg {
+  color: #F56B6E !important;
+  font-size: 14px !important;
+  line-height: 1.5715 !important;
+}

@@ -1,0 +1,46 @@
+@import '~antd/es/style/themes/default.less';
+
+:global {
+  @media (max-width: 1400px) {
+    .select-range {
+      .site-input-split {
+        width: 19.5% !important;
+      }
+    }
+  }
+  .current-rank {
+    .ant-picker {
+      width: 100% !important;
+    }
+    .ant-pro-card-body > div {
+      flex-wrap: wrap;
+      .tool-bar {
+        flex-wrap: wrap;
+        margin-top: 9px;
+        .ml-10 {
+          margin-left: 0px !important;
+        }
+        .toolbar-container-for-lg-filters {
+          flex-wrap: wrap;
+          .toolbar-sub-container {
+            margin-right: 10px;
+            margin-bottom: 12px;
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+    @media (max-width: 1400px) {
+      .ant-pro-card-body > div {
+        .tool-bar {
+          margin-top: 0px;
+          .toolbar-container-for-lg-filters {
+            .toolbar-sub-container {
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
